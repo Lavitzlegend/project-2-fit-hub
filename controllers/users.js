@@ -72,13 +72,12 @@ const renderEdit = (req, res) => {
             user: foundUser,
         });
     })
-    
 }
 
 const editUser = (req, res) => {
     User.update(req.body, {
         where: {
-            index: req.params.index,
+            id: req.params.index,
         },
         returning: true,
     })
