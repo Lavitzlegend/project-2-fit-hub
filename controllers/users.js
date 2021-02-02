@@ -54,6 +54,17 @@ const login = (req, res) => {
     });
 };
 
+const addWorkout = (req, res) => {
+    Workout.findByPk(req.body.workout)
+    .then(foundWorkout => {
+        User.findByPk(req.params.index)
+        .then(foundUser => {
+            foundUser.addWorkout(foundWorkout)
+            res.redirect(`/users/profile/${req.params.index}`);
+        })
+    })
+};
+
 const editUser = (req, res) => {
     User.update(req.body, {
         where: {
@@ -61,22 +72,15 @@ const editUser = (req, res) => {
         },
         returning: true,
     })
-    .then(updatedTrainer => {
-        Pokemon.findByPk(req.body.pokemon)
-        .then(foundPokemon => {
-            Trainer.findByPk(req.params.id)
-            .then(foundTrainer => {
-                foundTrainer.addPokemon(foundPokemon);
-                res.redirect(`/users/profile/${req.params.id}`);
-            })
-        })
-    });
+    .then(updatedUser => {
+        res.redirect(`/users/profile/${req.params.index}`);
+    })
 };
 
 const deleteUser = (req, res) => {
-    Trainer.destroy({
+    User.destroy({
         where: {
-            id: req.params.id
+            index: req.params.index
         }
     })
     .then(() => {
@@ -91,6 +95,7 @@ module.exports = {
     renderSignup,
     login,
     renderLogin,
+    addWorkout,
     editUser,
     deleteUser,
 }
