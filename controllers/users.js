@@ -66,7 +66,13 @@ const addWorkout = (req, res) => {
 };
 
 const renderEdit = (req, res) => {
-    res.render("users/editProfile.ejs");
+    User.findByPk(req.params.index)
+    .then(foundUser => {
+        res.render("users/editProfile.ejs", {
+            user: foundUser,
+        });
+    })
+    
 }
 
 const editUser = (req, res) => {
