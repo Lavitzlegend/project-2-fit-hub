@@ -22,7 +22,7 @@ const renderProfile = (req, res) => {
     User.findByPk(req.params.index, {
         include: [
         {
-            model: Workouts
+            model: Workout
         }
     ]
     })
