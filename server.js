@@ -13,7 +13,7 @@ app.use(express.urlencoded( {extended: true }));
 
 app.use(methodOverride("_method"));
 
-// app.use("/workouts", routes.workouts);
+app.use("/workouts", routes.workouts);
 app.use("/users", routes.users);
 
 
