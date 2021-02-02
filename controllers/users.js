@@ -89,7 +89,7 @@ const editUser = (req, res) => {
 const deleteUser = (req, res) => {
     User.destroy({
         where: {
-            index: req.params.index
+            id: req.params.index
         }
     })
     .then(() => {
