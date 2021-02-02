@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Welcome <%= user.name %>! Let's Get After It</h1>
-    <form action="/users/profile/<%=trainer.id%>?_method=PUT" method="POST">
+    <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
     New Workout: <select name="workout">
         <% for ( let i = 0; i < workout.length; i++ ) { %>
             <% let selected = ( i == 0 ) ? "selected" : ""; %>
