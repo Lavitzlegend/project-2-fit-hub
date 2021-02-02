@@ -12,15 +12,18 @@ router.post("/signup", ctrl.users.signup);
 //Show profile route
 router.get("/profile/:index", ctrl.users.renderProfile);
 
+//Edit profile route
+router.get("/profile/:index/edit", ctrl.users.renderEdit);
+
 //Login route
 router.get("/login", ctrl.users.renderLogin);
 router.post("/login", ctrl.users.login);
 
 //Edit route
 router.put("/profile/:index", ctrl.users.addWorkout);
-// router.put("/profile/edit/:index", ctrl.users.editUser);
+router.put("/profile/:index/edit", ctrl.users.editUser);
 
 //Delete route
-// router.delete("/profile/edit/:index", ctrl.users.deleteUser);
+router.delete("/profile/:index/edit", ctrl.users.deleteUser);
 
 module.exports = router;

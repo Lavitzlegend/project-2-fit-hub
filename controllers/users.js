@@ -65,6 +65,10 @@ const addWorkout = (req, res) => {
     })
 };
 
+const renderEdit = (req, res) => {
+    res.render("users/editProfile.ejs");
+}
+
 const editUser = (req, res) => {
     User.update(req.body, {
         where: {
@@ -96,6 +100,7 @@ module.exports = {
     login,
     renderLogin,
     addWorkout,
+    renderEdit,
     editUser,
     deleteUser,
 }
