@@ -5,27 +5,27 @@ module.exports = {
      await queryInterface.bulkInsert('Workouts', [
        {
         name: "Amanda",
-        link: "https://www.youtube.com/embed?v=_9PT5Du-cjo&ab_channel=NoahOhlsen",
+        link: "https://www.youtube.com/embed/_9PT5Du-cjo",
         description: "9-7-5 reps. Muscle-ups and Snatch for time. RX weight: M-135, W-95",
       },
       {
         name: "Angie",
-        link: "https://www.youtube.com/embed?v=pFpJKq2J0ow&ab_channel=CrossFit%C2%AE",
+        link: "https://www.youtube.com/embed/pFpJKq2J0ow",
         description: "100 pull-ups, 100 push-ups, 100 sit-ups, 100 air squats for time",
       },
       {
         name: "Annie",
-        link: "https://www.youtube.com/embed?v=CWaiZxgrBGY&ab_channel=CrossFit%C2%AE",
+        link: "https://www.youtube.com/embed/CWaiZxgrBGY",
         description: "50-40-30-20-10 reps of double-unders and sit-ups for time",
       },
       {
         name: "Barbara",
-        link: "https://www.youtube.com/embed?v=beQn0K3ihT0&ab_channel=CrossFit%C2%AE",
+        link: "https://www.youtube.com/watch?v=beQn0K3ihT0&ab_channel=CrossFit%C2%AE",
         description: "5 rounds of 20 pull-ups, 30 push-ups, 40 sit-ups, 50 air squats, 3-minutes rest between rounds. For time.",
       },
       {
         name: "Candy",
-        link: "https://www.youtube.com/embed?v=KzXKBYBFnqQ&ab_channel=%D0%9E%D0%BB%D0%B5%D0%B3%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D1%83%D0%B4%D0%BE%D0%B2",
+        link: "https://www.youtube.com/watch?v=KzXKBYBFnqQ&ab_channel=%D0%9E%D0%BB%D0%B5%D0%B3%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D1%83%D0%B4%D0%BE%D0%B2",
         description: "5 rounds for time of 20 pull-ups, 40 push-ups, 60 air squats",
       },
       {

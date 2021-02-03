@@ -27,7 +27,7 @@ const show = (req, res) => {
         attributes: ['name', 'link', 'description']
     })
     .then(foundWorkout => {
-        console.log("FOUND: "+foundWorkout.link)
+        // console.log("FOUND: "+foundWorkout.link)
         res.render('show.ejs', {
             workout: foundWorkout
         })
