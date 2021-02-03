@@ -19,7 +19,7 @@
             font-family: 'Architects Daughter', cursive;
         }
         a {
-            color: rgb(240, 240, 240);
+            color: rgb(250, 250, 250);
         }
     </style>
 </head>
@@ -30,7 +30,7 @@
         <a href="/users">Log Out</a><br><br>
     </article>
     <article class='workout'>
-    <h1>Welcome <%= user.name %>! Let's Get After It</h1>
+    <h1>Welcome <%= user.name %>! Let's Get After It:</h1>
     <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
     Add New Workout: <select name="workout">
         <% for ( let i = 0; i < workout.length; i++ ) { %>
@@ -38,10 +38,10 @@
             <option value="<%=workout[i].id%>" <%=selected%>><%=workout[i].name%>
             </option>
        <% } %>
-    </select><br><br>
+    </select>
     
         <input type="submit" name="" value="Add Selected Workout"/>
-    </form><br><br><br><br>
+    </form><br><br><br>
 
     <h3>My Workouts:</h3>
     <ul>
