@@ -23,7 +23,7 @@
     <h3>My Recently Added Workouts:</h3>
     <% let count = 0 %>
     <ul>
-        <% for (let i=(user.Workouts.length - 1); i> -1; i--){ %>
+        <% for (let i=(user.Workouts.length - 1); count < 10; i--){ %>
                 <li>
                 <a href="/workouts/<%=user.Workouts[i].id%>"><%=user.Workouts[i].name%></a>
                 </li>
