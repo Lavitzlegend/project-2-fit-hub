@@ -12,6 +12,8 @@ app.use((req, res, next) => {
 app.use(express.urlencoded( {extended: true }));
 
 app.use(methodOverride("_method"));
+// app.use(express.static(__dirname + '/public'));
+
 
 app.use("/workouts", routes.workouts);
 app.use("/users", routes.users);
