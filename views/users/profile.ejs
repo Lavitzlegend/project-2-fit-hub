@@ -20,16 +20,13 @@
         <input type="submit" name="" value="Add This Workout"/>
     </form><br><br>
 
-    <h3>My Recently Added Workouts:</h3>
-    <% let count = 0 %>
+    <h3>My Workouts:</h3>
     <ul>
-        <% for (let i=(user.Workouts.length - 1); i > -1; i--){ %>
-            <% if (count < 10) { %> 
+        <% for (let i=(user.Workouts.length - 1); i > -1; i--){ %> 
             <li>
                 <a href="/workouts/<%=user.Workouts[i].id%>"><%=user.Workouts[i].name%></a>
             </li>
             <br>
-        <% count++ } %>
         <% } %>
     </ul>
 

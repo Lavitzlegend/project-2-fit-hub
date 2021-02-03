@@ -1,5 +1,6 @@
 const Workout = require('../models').Workout;
 const User = require('../models').User;
+const userWorkout = require('../models').UserWorkout;
 
 const homePage = (req, res) => {
     res.render("users/index.ejs");
@@ -22,9 +23,9 @@ const renderProfile = (req, res) => {
     User.findByPk(req.params.index, {
         include: [
         {
-            model: Workout
+            model: Workout,
         }
-    ]
+    ]        
     })
     
     .then(userProfile => {
