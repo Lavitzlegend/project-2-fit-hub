@@ -10,6 +10,15 @@
             float: right;
             text-align: right;
         }
+        body {
+            background-image: url('https://media.istockphoto.com/photos/stone-wall-texture-picture-id594908278?k=6&m=594908278&s=612x612&w=0&h=dGIwppaLIYjag0bqRBVX7nYEoXR-O4sVr0Z6Zf0eRBI=');
+            background-size: 50% 40%;
+            background-repeat: repeat;
+            color: rgb(190, 255, 184);
+        }
+        a {
+            color: rgb(240, 240, 240);
+        }
     </style>
 </head>
 <body>
@@ -18,6 +27,7 @@
         <a href="/workouts">View All Workouts</a><br><br>
         <a href="/users">Log Out</a><br><br>
     </article>
+    <article class='workout'>
     <h1>Welcome <%= user.name %>! Let's Get After It</h1>
     <form action="/users/profile/<%=user.id%>?_method=PUT" method="POST">
     Add New Workout: <select name="workout">
@@ -34,16 +44,14 @@
     <h3>My Workouts:</h3>
     <ul>
         <% for (let i=(user.Workouts.length - 1); i > -1; i--){ %> 
-            <form action="<%=user.Workouts[i].id%>/edit?_method=DELETE" method="POST"></form>
             <li>
                 <a href="/workouts/<%=user.Workouts[i].id%>"><%=user.Workouts[i].name%></a>
             </li>
                 <input type="submit" value="Delete This Workout"/>
-            </form>
             <br><br>
         <% } %>
     </ul>
-
+</article>
     <br><br>
     <h4>Account Active Since: <%=user.createdAt%></h4>
 
