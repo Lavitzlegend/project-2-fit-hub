@@ -6,10 +6,7 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
-    "dialectOptions": {
-      "ssl": true
-    }
+    "use_env_variable": "DATABASE_URL"
   },
   "scripts": {
     "start": "node server.js"
