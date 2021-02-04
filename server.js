@@ -2,6 +2,7 @@ const express = require('express'); //from documentation: express is function
 const app = express(); //app is an object
 const methodOverride = require("method-override");
 const routes = require("./routes");
+require('dotenv').config();
 
 // Middleware
 app.use((req, res, next) => {
