@@ -52,7 +52,7 @@ Temporary Items
 # *.sublime-project
 
 # SFTP configuration file
-sftp-config.json
+# sftp-config.json
 
 # Package control specific files
 Package Control.last-run
@@ -117,14 +117,14 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+# node_modules/
+# jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
 
 # Optional npm cache directory
-.npm
+# .npm
 
 # Optional eslint cache
 .eslintcache
