@@ -3,7 +3,7 @@ const router = express.Router();
 const ctrl = require("../controllers");
 
 //Index route
-router.get("/", ctrl.users.homePage);
+// router.get("/", ctrl.users.homePage);
 
 //New route
 router.get("/signup", ctrl.users.renderSignup);
