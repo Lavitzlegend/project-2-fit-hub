@@ -18,6 +18,6 @@ app.use(methodOverride("_method"));
 app.use("/workouts", routes.workouts);
 app.use("/users", routes.users);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     // console.log("I am listening");
 });
