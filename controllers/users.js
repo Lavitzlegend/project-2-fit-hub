@@ -94,7 +94,7 @@ const deleteUser = (req, res) => {
         }
     })
     .then(() => {
-        res.redirect('/users');
+        res.redirect('/');
     });
 };
 
