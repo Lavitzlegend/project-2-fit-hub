@@ -11,10 +11,10 @@ This is our take on a Workout tracking and sharing app.
 
 ## Technology Used
 
-- Vanilla javascript, css, and html.
-- Sequelize, pg, express, ejs, method-override, dotenv
-- embedded Youtube videos
-- I linked a font from fonts.googleapis.
+- Vanilla javascript, css, and html
+- NodeJS, Sequelize, pg, express, ejs, method-override, dotenv
+- Embedded Youtube videos
+- Linked a font from fonts.googleapis.
 - Heroku hosted server and database
 
 ## Theory
@@ -68,6 +68,7 @@ On the users profile they have a drop down with all the workouts added to the Wo
 - Accessing the user from a page that did not have the user's profile id
 - Accesssing the join table directly
 - Including images rather than links without restructuring the code (routes??)
+- Coding with a collaborator
 
 ## Wireframe
 ![20210201_132114 (1)](https://user-images.githubusercontent.com/74585897/106974409-8180ca80-6709-11eb-9fd4-5d1922e19e2d.jpg)
