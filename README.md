@@ -31,7 +31,7 @@ On the users profile they have a drop down with all the workouts added to the Wo
    
 ## Main Features
 
-- Landing page links to login or create and account take you to the respective EJS files
+- Landing page links to login or create an account and takes you to the respective EJS files
 - Using text and password inputs with req.body to pass them into their respective tables
 - Profile page utilizes a few for-loops to display all the workouts in the Workout table as well as all the workouts tied to the current userId in the JOIN table
 - BelongsToMany associations for both User and Workout classes
@@ -45,13 +45,32 @@ On the users profile they have a drop down with all the workouts added to the Wo
 ## User Stories
 
 1. I want to see the homepage when I go to the URL
-2. I should be able to login to my profile page as an existing user or signup as a new user
-3. I want to see a list of all possible workouts to add to the “My Workouts” section of my profile
-4. I want to have a link to any workouts added to My Workouts to see more info about that workout and/or edit the workout
-5. There should be a link to an index page of all workouts with a link to create a new workout
+2. I should be able to signup as a new user
+3. I should be able to login to my profile page as an existing user 
+4. I should see how long my account has been active 
+5. I want to see a list of all possible workouts 
+6. I should be able to add to the “My Workouts” section of my profile a new workout
+7. I want to have a link to any workouts added to My Workouts to see more info about that workout and/or edit the workout
+8. There should be a link to an index page of all workouts with a link to create a new workout
+9. I should be able to view the workout video without leaving the workout profile page
+10. I should be able to logout
+11. ACCORDING TO OUR "LEADER", THE PASSWORD SHOULD NOT BE DISPLAYED, lol
 
 
 ## What's left?
 
 - The user can add an infinite number of unique workouts so the My Workouts section will continue down forever
 - It would be better if the My Workouts were sorted by recently added instead of by workoutId
+- Should be able to edit or remove a workout
+- Be able to return back to the user profile page, after viewing the list of available workouts
+
+## Challenges
+- Accessing the user from a page that did not have the user's profile id
+- Accesssing the join table directly
+- Including images rather than links without restructuring the code (routes??)
+
+## Wireframe
+![20210201_132114 (1)](https://user-images.githubusercontent.com/74585897/106974409-8180ca80-6709-11eb-9fd4-5d1922e19e2d.jpg)
+
+<img width="731" alt="Untitled 3" src="https://user-images.githubusercontent.com/74585897/106975533-965e5d80-670b-11eb-8bf8-0c080da75be2.png">
+
