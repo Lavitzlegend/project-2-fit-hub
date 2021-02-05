@@ -1,5 +1,10 @@
 # Project 2 - FitHub
 
+## Authors
+
+Elizabeth Pioletti and Jordan Dyar
+
+## App link and Profile Page
 [Homepage Link](https://fit-hub-app.herokuapp.com/)
 
 Profile Page:
