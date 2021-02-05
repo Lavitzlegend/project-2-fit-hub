@@ -74,3 +74,6 @@ On the users profile they have a drop down with all the workouts added to the Wo
 
 <img width="731" alt="Untitled 3" src="https://user-images.githubusercontent.com/74585897/106975533-965e5d80-670b-11eb-8bf8-0c080da75be2.png">
 
+## ERD
+
+![Screen Shot 2021-02-04 at 9 22 33 PM](https://media.git.generalassemb.ly/user/33322/files/4b564180-672f-11eb-81b5-d678158aaf73)
